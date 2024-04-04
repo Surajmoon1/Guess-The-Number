@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <h1>Number Guessing Game</h1>
+
+        <p> Try and guess a Randon Number Betweeen 1 To 100.</p>
+        <p style="color: rgb(92, 92, 92); margin: 2px;">You Have 10 Attempts to Guess the Right Number</p>
+
+        <form class="form">
+            <label for="guessField" class="guessLabel" id="guessLabel">Guess a Number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="sub" value="Submit" class="guessSub">
+        </form>
+
+        <div class="resultParas">
+            <p class="para" id="para">Your Guesses: <span class="guesses"></span></p>
+            <p class="para" id="para">Guesses Remaining: <span class="remGuess">10</span></p>
+            <p class="lowOrHigh para" id="lowOrHigh"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

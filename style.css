@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(0, 255, 234);
+    font-size: 5dvw;
+    margin: 20px;
+
+}
+
+p {
+    color: rgb(173, 173, 173);
+    font-size: 1.5dvw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+
+    .guessLabel {
+        color: rgb(223, 222, 222);
+        font-size: 5dvw;
+        margin: 10px 0;
+    }
+
+    #guessField {
+        width: 54%;
+        border: none;
+        margin: 20px 0;
+        height: 4.2dvh;
+        text-align: center;
+        font-size: 2dvw;
+        outline: none;
+        padding: 3px;
+        background-color: rgb(121, 118, 118);
+        font-weight: bolder;
+        border: 4px solid black;
+        transition: all .5s ease-in-out;
+    }
+
+    .guessSub {
+        background-color: black;
+        color: rgb(223, 222, 222);
+        padding: 1dvh 5dvw;
+        font-weight: bold;
+        font-size: 2dvw;
+        transition: all .5s ease-in-out;
+
+    }
+}
+
+.button {
+    background-color: black;
+    color: rgb(223, 222, 222);
+    padding: 1dvh 4dvw;
+    font-weight: bold;
+    font-size: 2dvw;
+    margin-top: 20px;
+}
+
+.resultParas {
+    text-align: center;
+
+    .para {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .lowOrHigh {
+        margin-top: 30px;
+    }
+}
+
+#guessField:focus {
+    border: 4px solid rgb(0, 255, 234);
+    width: 70%;
+}
+
+.guessSub:focus {
+    border: 3px solid rgb(0, 255, 234);
+    padding: 1dvh 6dvw;
+}
+
+.button:focus {
+    border: 3px solid rgb(0, 255, 234);
+}
+
+.lowOrHigh {
+    color: rgb(0, 255, 234);
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 7.99dvw;
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 3dvw;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    #guessLabel {
+        font-size: 10dvw;
+    }
+
+    #sub {
+        font-size: larger;
+        padding: 2dvh 10dvw;
+
+    }
+
+    form #guessField {
+        font-size: 7dvw;
+    }
+
+    #lowOrHigh{
+        font-size: 6dvw;
+        width: 100%;
+        text-align: center;
+    }
+
+    #para{
+        text-align: center;
+        width: 100%;
+        font-size: 5dvw;
+    }
+
+    .button{
+        font-size: larger;
+        padding: 2dvh 10dvw;
+
+    }
+}
